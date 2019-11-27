@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动特殊用法</title>
+	<link rel="stylesheet" href="../common.css">
+	<style>
+		.main {
+			width: 300px;
+			height: 550px;
+			border:1px solid #ccc;
+			margin: 0 auto;
+		}
+		.main > li {
+			float: left;
+			width: 300px;
+			height: 100%;
+			margin-left: -150px;
+			opacity: 0.5;
+		}
+
+		.main > li:first-child {
+			background-color: lightblue;
+
+		}
+		.main > li:last-child {
+			background-color: pink;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="main">
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
